@@ -1,0 +1,6 @@
+{
+  "name": "THE KITE — Authentic Brazilian Coffee",
+  "description": "THE KITE premium Brazilian coffee e-commerce store and operations platform for Bangladesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
