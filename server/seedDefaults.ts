@@ -92,7 +92,7 @@ export const DEFAULT_HOMEPAGE_SECTIONS: HomepageSections = {
       'Sourced directly from high-altitude family farms across Cerrado Mineiro, Sul de Minas, and Mogiana, THE KITE brings authentic Brazilian coffee culture straight to your daily ritual in Bangladesh. Every lot is small-batch roasted and nitrogen-sealed for enduring aroma.',
     heritage_label: 'Direct Origin',
     heritage_value: '100% Brazil',
-    image_url: '/src/assets/images/brand_plantation_harvest_1795674314245.jpg',
+    image_url: '/assets/aistudio/image_68e14a32.png',
     cta_text: 'Discover Our Roasts',
   },
   varieties: {

@@ -425,17 +425,32 @@ export function StorefrontHome({
           </div>
 
           <div className="lg:col-span-6 relative">
-            <div className="relative rounded-3xl overflow-hidden border border-[#E2D9C8] shadow-md aspect-4/3 bg-[#F7F4EE]">
-              <CoffeeVisual
-                src={sections.brand.image_url}
-                alt="THE KITE Brazilian Coffee Plantation & Harvest"
-                variant="beans"
-                label="Minas Gerais · Hand-Picked Harvest"
-                className="w-full h-full"
-              />
-            </div>
+            {!sections.brand.image_url ||
+            sections.brand.image_url === '/assets/aistudio/image_68e14a32.png' ||
+            sections.brand.image_url ===
+              '/src/assets/images/brand_plantation_harvest_1795674314245.jpg' ? (
+              <div className="relative mx-auto max-w-lg">
+                <img
+                  src="/assets/aistudio/image_68e14a32.png"
+                  alt="THE KITE Brazilian Coffee Café & Barista Experience"
+                  className="w-full h-auto object-contain mix-blend-multiply select-none"
+                />
+              </div>
+            ) : (
+              <div className="relative mx-auto max-w-lg">
+                <div className="relative overflow-hidden rounded-[46%_54%_42%_58%/48%_44%_56%_52%] aspect-[11/10] bg-[#F7F4EE]">
+                  <CoffeeVisual
+                    src={sections.brand.image_url}
+                    alt="THE KITE Brazilian Coffee Plantation & Harvest"
+                    variant="beans"
+                    label="Minas Gerais · Hand-Picked Harvest"
+                    className="w-full h-full"
+                  />
+                </div>
+              </div>
+            )}
 
-            <div className="mt-4 sm:mt-0 sm:absolute sm:-top-5 sm:-left-5 bg-white border border-[#E2D9C8] rounded-2xl px-5 py-3.5 shadow-sm inline-block">
+            <div className="mt-4 sm:mt-0 sm:top-2 sm:left-2 sm:absolute bg-white/95 backdrop-blur-xs border border-[#E2D9C8] rounded-2xl px-5 py-3.5 shadow-sm inline-block">
               <p className="text-xs font-medium text-[#5A524A]">
                 {sections.brand.heritage_label}
               </p>
